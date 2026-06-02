@@ -45,7 +45,7 @@ FTK Imager is a free forensic imaging and triage tool from Exterro. It allows an
 
 Browsed the file system in FTK Imager and examined the `/boot` directory. The kernel configuration file `config-4.13.0-kali1-amd64` clearly identifies the distribution as Kali Linux, a Debian-based distribution commonly used for penetration testing and security research.
 
-> 📷 *[Screenshot 1 — /boot directory showing kali1-amd64 kernel config file]*
+> 📷 *[q1.png]*
 
 ---
 
@@ -59,8 +59,8 @@ Navigated to `/var/log/apache2/` in the evidence tree and located `access.log`. 
 
 Notably, `d41d8cd98f00b204e9800998ecf8427e` is the MD5 hash of an **empty file** — meaning the access.log contained no data, which is significant and ties directly to Q7.
 
-> 📷 *[Screenshot 2 — right-click Export File Hash List on access.log]*  
-> 📷 *[Screenshot 3 — hash CSV output showing MD5 value]*
+> 📷 *[q2.png]*  
+> 📷 *[q2b.png]*
 
 ---
 
@@ -72,7 +72,7 @@ Notably, `d41d8cd98f00b204e9800998ecf8427e` is the MD5 hash of an **empty file**
 
 Browsed to `/root/Downloads/` in the evidence tree. Found `mimikatz_trunk.zip` — a compressed archive of Mimikatz, a well-known credential dumping tool commonly used to extract plaintext passwords, hashes, and Kerberos tickets from memory. Its presence on Karen's machine indicates she was staging offensive tools.
 
-> 📷 *[Screenshot 4 — /root/Downloads showing mimikatz_trunk.zip]*
+> 📷 *[q3.png]*
 
 ---
 
@@ -91,7 +91,7 @@ cat snky snky > /root/Desktop/SuperSecretFile.txt
 
 This shows Karen deliberately created a file named `SuperSecretFile.txt` on her Desktop and redirected content into it.
 
-> 📷 *[Screenshot 5 — .bash_history showing SuperSecretFile.txt creation commands]*
+> 📷 *[q4.png]*
 
 ---
 
@@ -109,7 +109,7 @@ binwalk didyouthinkwedmakeiteasy.jpg
 
 Binwalk is a tool for analyzing and extracting embedded data from binary files, commonly used in steganography and firmware analysis. Karen ran it against a JPEG file, suggesting she was either hiding data inside an image or extracting something from one.
 
-> 📷 *[Screenshot 6 — .bash_history showing binwalk command]*
+> 📷 *[q5.png]*
 
 ---
 
@@ -130,7 +130,7 @@ Check List:
 
 The third item on Karen's checklist was **Profit** — revealing her motivations were financially driven.
 
-> 📷 *[Screenshot 7 — Checklist file content on Karen's Desktop]*
+> 📷 *[q6.png]*
 
 ---
 
@@ -144,7 +144,7 @@ Returned to `/var/log/apache2/` and examined all three log files — `access.log
 
 This is corroborated by the empty MD5 hash identified in Q2.
 
-> 📷 *[Screenshot 8 — /var/log/apache2/ showing all log files at 0 KB]*
+> 📷 *[q7.png]*
 
 ---
 
@@ -156,7 +156,7 @@ This is corroborated by the empty MD5 hash identified in Q2.
 
 Located an unusual JPEG file named `irZLAohL.jpeg` in `/root/`. Previewing the file in FTK Imager revealed a screenshot of a Windows desktop containing forensic tools, reference materials, and files suggesting this machine was used to conduct or stage an attack against another system. The random-looking filename is also suspicious and consistent with an attempt to obscure the file's purpose.
 
-> 📷 *[Screenshot 9 — irZLAohL.jpeg preview showing attack-related desktop content]*
+> 📷 *[q8.png]*
 
 ---
 
@@ -174,7 +174,7 @@ echo "Heck yeah! I can write bash too Young"
 
 Karen embedded a direct taunt toward someone named **Young** inside her bash script.
 
-> 📷 *[Screenshot 10 — firstscript_fixed content showing taunt directed at Young]*
+> 📷 *[q9.png]*
 
 ---
 
@@ -186,7 +186,7 @@ Karen embedded a direct taunt toward someone named **Young** inside her bash scr
 
 Navigated to `/var/log/auth.log`. Filtered entries around 11:26 and found repeated authentication events showing successful `su` commands to gain root access by the user **postgres** — a database service account that should not normally be used for interactive login or privilege escalation. This is a significant indicator of insider abuse.
 
-> 📷 *[Screenshot 11 — auth.log showing postgres su to root at 11:26]*
+> 📷 *[q10.png]*
 
 ---
 
@@ -204,7 +204,7 @@ Returned to `.bash_history` and reviewed the navigation commands. The final `cd`
 
 This directory contained Karen's scripts and hack-related files, confirming it as her primary working location during the incident.
 
-> 📷 *[Screenshot 12 — .bash_history showing final cd to /root/Documents/myfirsthack/]*
+> 📷 *[q11.png]*
 
 ---
 
