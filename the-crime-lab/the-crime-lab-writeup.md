@@ -77,7 +77,7 @@ Starts the ALEAPP GUI. From here you can point the tool at your Android device i
 
 Examined the installed application artifacts on the recovered device image. Located the APK file for the victim's primary trading application and computed its SHA256 hash. This hash can be used to positively identify the exact version of the application and cross-reference it against known threat intelligence sources if needed.
 
-> 📷 *[Screenshot — APK artifact / hash verification]*
+> ![Screenshot — APK artifact / hash verification](images/q1.pmg)
 
 ---
 
@@ -89,7 +89,7 @@ Examined the installed application artifacts on the recovered device image. Loca
 
 Recovered financial communication records from the device. The amount of 250,000 was identified through messaging artifacts corroborating the witness testimony that the victim was under significant financial pressure and actively avoiding contact with his creditor.
 
-> 📷 *[Screenshot — messaging artifact showing debt amount]*
+> ![Screenshot — messaging artifact showing debt amount](images/q2.png)
 
 ---
 
@@ -101,7 +101,7 @@ Recovered financial communication records from the device. The amount of 250,000
 
 Cross-referenced contact records and message artifacts on the device. Shady Wahab was identified as the individual making repeated calls to the victim and referenced in financial communications as the creditor.
 
-> 📷 *[Screenshot — contact / message artifact identifying Shady Wahab]*
+> ![Screenshot — contact / message artifact identifying Shady Wahab](images/q3.png)
 
 ---
 
@@ -113,7 +113,7 @@ Cross-referenced contact records and message artifacts on the device. Shady Waha
 
 Analyzed location data and booking records stored on the device. The victim had checked into The Nile Ritz-Carlton on the date in question, consistent with the family's account that he left without explanation.
 
-> 📷 *[Screenshot — location / booking artifact]*
+> ![Screenshot — location / booking artifact](images/q4.png)
 
 ---
 
@@ -125,7 +125,8 @@ Analyzed location data and booking records stored on the device. The victim had 
 
 Examined calendar entries and travel-related artifacts on the device. A flight reservation was recovered indicating the victim intended to travel to Las Vegas following his hotel stay. This suggests premeditated movement and potentially planned contact at the destination.
 
-> 📷 *[Screenshot — flight / calendar artifact]*
+> ![Screenshot — flight / calendar artifact](images/q5.png)
+> ![plane ticket](images/q5b.png)
 
 ---
 
@@ -137,7 +138,7 @@ Examined calendar entries and travel-related artifacts on the device. A flight r
 
 Recovered Discord message artifacts from the device. The victim had arranged to meet a contact at The Mob Museum — located in Las Vegas — consistent with the flight destination identified in Q5 and suggesting the meeting was the purpose of the trip.
 
-> 📷 *[Screenshot — Discord conversation artifact]*
+> ![Screenshot — Discord conversation artifact](images/q6.png)
 
 ---
 
