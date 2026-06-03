@@ -89,7 +89,7 @@ Examined the installed application artifacts on the recovered device image. Loca
 
 Recovered financial communication records from the device. The amount of 250,000 was identified through messaging artifacts corroborating the witness testimony that the victim was under significant financial pressure and actively avoiding contact with his creditor.
 
-> ![Screenshot — messaging artifact showing debt amount](images/q2.png)
+> ![Screenshot — messaging artifact showing debt amount](images/q3.png)
 
 ---
 
@@ -101,7 +101,7 @@ Recovered financial communication records from the device. The amount of 250,000
 
 Cross-referenced contact records and message artifacts on the device. Shady Wahab was identified as the individual making repeated calls to the victim and referenced in financial communications as the creditor.
 
-> ![Screenshot — contact / message artifact identifying Shady Wahab](images/q3.png)
+> ![Screenshot — contact / message artifact identifying Shady Wahab](images/q2.png)
 
 ---
 
