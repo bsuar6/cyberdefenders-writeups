@@ -77,7 +77,7 @@ Starts the ALEAPP GUI. From here you can point the tool at your Android device i
 
 Examined the installed application artifacts on the recovered device image. Located the APK file for the victim's primary trading application and computed its SHA256 hash. This hash can be used to positively identify the exact version of the application and cross-reference it against known threat intelligence sources if needed.
 
-> ![Screenshot — APK artifact / hash verification](images/q1.pmg)
+> ![Screenshot — APK artifact / hash verification](images/q1.png)
 
 ---
 
